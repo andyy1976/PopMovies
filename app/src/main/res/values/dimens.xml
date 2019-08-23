@@ -1,0 +1,20 @@
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="d0_quarter">4dp</dimen>
+    <dimen name="d1">8dp</dimen>
+    <dimen name="d1_quarter">10dp</dimen>
+    <dimen name="d2">16dp</dimen>
+    <dimen name="d2_half">20dp</dimen>
+    <dimen name="d3">24dp</dimen>
+    <dimen name="d5">40dp</dimen>
+    <dimen name="d15">120dp</dimen>
+    <dimen name="d20">160dp</dimen>
+    <dimen name="d25">200dp</dimen>
+    <dimen name="d30">240dp</dimen>
+    <dimen name="d35">280dp</dimen>
+
+    <dimen name="s2">16sp</dimen>
+    <dimen name="s2_quarter">18sp</dimen>
+    <dimen name="s2_half">20sp</dimen>
+    <dimen name="s3">24sp</dimen>
+</resources>

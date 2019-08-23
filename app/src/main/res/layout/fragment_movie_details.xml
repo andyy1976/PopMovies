@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white">
+
+        <TextView
+            android:id="@+id/movie_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGreen"
+            android:gravity="center_vertical"
+            android:padding="@dimen/d3"
+            android:textColor="@color/colorText"
+            android:textSize="38sp"
+            tools:text="Movie Title" />
+
+        <LinearLayout
+            android:id="@+id/movie_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/d1_quarter"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/movie_poster"
+                android:layout_width="@dimen/d20"
+                android:layout_height="@dimen/d30"
+                android:layout_marginStart="@dimen/d1"
+                android:layout_marginLeft="@dimen/d1"
+                android:layout_marginEnd="@dimen/d2"
+                android:layout_marginRight="@dimen/d2"
+                android:scaleType="centerCrop"
+                android:src="@mipmap/ic_launcher" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/label"
+                    android:layout_marginTop="@dimen/d0_quarter"
+                    android:text="@string/release_date" />
+
+                <TextView
+                    android:id="@+id/movie_release_date"
+                    style="@style/text"
+                    tools:text="April 2015" />
+
+                <TextView
+                    style="@style/label"
+                    android:text="@string/rating" />
+
+                <TextView
+                    android:id="@+id/movie_rating"
+                    style="@style/text"
+                    tools:text="8.1/10" />
+
+                <TextView
+                    style="@style/label"
+                    android:text="@string/popularity" />
+
+                <TextView
+                    android:id="@+id/movie_popularity"
+                    style="@style/text"
+                    tools:text="123,232" />
+
+                <TextView
+                    android:id="@+id/movie_fav_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/d2_half"
+                    android:background="@color/colorGreenLight"
+                    android:padding="@dimen/d1"
+                    android:text="@string/mark_favorite_label"
+                    android:textColor="@color/colorGreen"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/movie_genre_title"
+            style="@style/label"
+            android:text="@string/genre" />
+
+        <TextView
+            android:id="@+id/movie_genre"
+            style="@style/text"
+            tools:text="comedy" />
+
+        <TextView
+            style="@style/label"
+            android:text="@string/original_title" />
+
+        <TextView
+            android:id="@+id/movie_original_title"
+            style="@style/text"
+            tools:text="english" />
+
+        <TextView
+            style="@style/label"
+            android:text="@string/original_language" />
+
+        <TextView
+            android:id="@+id/movie_original_language"
+            style="@style/text"
+            tools:text="english" />
+
+        <TextView
+            android:id="@+id/overview_label"
+            style="@style/label"
+            android:text="@string/overview" />
+
+        <TextView
+            android:id="@+id/movie_overview"
+            style="@style/text"
+            android:layout_marginBottom="@dimen/d3"
+            tools:text="After the devastating events of Avengers: Infinity War, the universe is in ruins due to the efforts of the Mad Titan, Thanos. With the help of remaining allies, the Avengers must assemble once more in order to undo Thanos' actions and restore order to the universe once and for all, no matter what consequences may be in store." />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/d2_half"
+            android:layout_marginRight="@dimen/d2_half"
+            android:background="@color/colorGrayDark" />
+
+        <TextView
+            android:id="@+id/trailers_label"
+            style="@style/label"
+            android:text="@string/trailers" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/trailers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d2_half"
+            android:layout_marginRight="@dimen/d2_half"
+            android:layout_marginBottom="@dimen/d3" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/d2_half"
+            android:layout_marginRight="@dimen/d2_half"
+            android:background="@color/colorGrayDark" />
+
+        <TextView
+            android:id="@+id/reviews_label"
+            style="@style/label"
+            android:text="@string/reviews" />
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/reviews"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/d2_half"
+            android:layout_marginRight="@dimen/d2_half"
+            android:layout_marginBottom="@dimen/d3" />
+
+    </LinearLayout>
+</ScrollView>
